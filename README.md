@@ -34,3 +34,9 @@ Users like to leave some of the requirements till the last minute and as such I 
 
 #### React-PDF
 
+#### PDF.js Express
+
+#### PDFTron WebViewer
+
+
+
