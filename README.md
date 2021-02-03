@@ -34,6 +34,8 @@ Users like to leave some of the requirements till the last minute and as such I 
 
 ##### Installation
 
+Documentation is available through [npm](https://www.npmjs.com/package/react-pdf) and [GitHub](https://github.com/wojtekmaj/react-pdf).
+
 `npm i react-pdf`
 
 For some reason, after trying to load my files, I was faced with `Failed to load PDF file`. Checking the console did not yield anything fruitful. Reading documentation further, it seems like I have to host my `PDF.js` worker elsewhere and it is not as simple plug-n-play. After some time, I was able to get started and render out first page! 
@@ -41,14 +43,22 @@ For some reason, after trying to load my files, I was faced with `Failed to load
 However, the text layer was off. At first, it is easy to think you are bad at CSS, but after a quick search seems like an [issue](https://github.com/wojtekmaj/react-pdf/issues/332) from 2019. @nikonet saved the day with his [fix](https://github.com/wojtekmaj/react-pdf/issues/332#issuecomment-458121654). Not an official fix, but oh well. 
 
 Pros
-+ an impressive project by Wojciech Maj
++ an impressive project by [Wojciech Maj](https://wojtekmaj.pl/)
 + simple enough to get started
++ frequent commits and updates
 
 Cons
 - no UI
-- a lot of common issues that are not mentioned in docs or resolved in issues
+- a lot of common issues or gotchas that are not mentioned in docs or resolved in issues
+- still plagued by a lot of issues coming from PDF.js side, for example, when trying to select text
 
 #### PDF.js Express
+
+[PDF.js Express](https://pdfjs.express/) is a new player that provides an out of the box UI and annotation support on top of `PDF.js` rendering. 
+
+##### Installation
+
+
 
 #### PDFTron WebViewer
 
