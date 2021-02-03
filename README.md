@@ -94,6 +94,12 @@ After installing, you will need to copy the static files located in `node_module
 
 In the sample, I added a handy `postinstall` script in `package.json`.
 
+#### First impressions
+
+Getting started was much quicker, thanks to good guides. The selection is accurate and does not flash even through it also uses `PDF.js` under the hood. 
+
+![selection in pdfjs-express](./assets/screenshots/pdfjs-express/pdfjs-express-selection.gif)
+
 ### PDFTron WebViewer
 
 
