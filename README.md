@@ -38,9 +38,19 @@ Documentation is available through [npm](https://www.npmjs.com/package/react-pdf
 
 `npm i react-pdf`
 
-For some reason, after trying to load my files, I was faced with `Failed to load PDF file`. Checking the console did not yield anything fruitful. Reading documentation further, it seems like I have to host my `PDF.js` worker elsewhere and it is not as simple plug-n-play. After some time, I was able to get started and render out first page! 
+##### First impressions
+
+For some reason, after trying to load my files, I was faced with `Failed to load PDF file`. Checking the console did not yield anything fruitful. Reading documentation further, it seems like I have to host my `PDF.js` worker elsewhere and it is not as simple plug-n-play. After some time, I was able to get started and render out first page!
+
+![errors in react-pdf](./assets/screenshots/react-pdf/React-PDF.png)
 
 However, the text layer was off. At first, it is easy to think you are bad at CSS, but after a quick search seems like an [issue](https://github.com/wojtekmaj/react-pdf/issues/332) from 2019. @nikonet saved the day with his [fix](https://github.com/wojtekmaj/react-pdf/issues/332#issuecomment-458121654). Not an official fix, but oh well. 
+
+![text layer shift in react-pdf](./assets/screenshots/react-pdf/React-PDF-text-layer.png)
+
+Selecting text is a bit of a nightmare, but this is not coming from `react-pdf` but is coming from `PDF.js` and is a known issue.
+
+![selection in react-pdf](./assets/screenshots/react-pdf/react-pdf-selection.gif)
 
 Pros
 + an impressive project by [Wojciech Maj](https://wojtekmaj.pl/)
