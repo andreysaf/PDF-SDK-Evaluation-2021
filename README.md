@@ -86,7 +86,13 @@ Cons
 
 ##### Installation
 
+Documentation and samples is available through [npm](https://www.npmjs.com/package/@pdftron/pdfjs-express) and [website](https://pdfjs.express/documentation/get-started).
 
+`npm i @pdftron/pdfjs-express`
+
+After installing, you will need to copy the static files located in `node_modules/@pdftron/pdfjs-express/public` into a place that will be served alongside your other website files.
+
+In the sample, I added a handy `postinstall` script in `package.json`.
 
 #### PDFTron WebViewer
 
