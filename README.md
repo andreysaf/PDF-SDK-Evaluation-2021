@@ -5,10 +5,6 @@ Users like to leave some of the requirements till the last minute and as such I 
 
 ### I need to support PDFs within my app, how do I do that?
 
-- We could let people download or open a PDF in a new tab
-- We could implement our own viewer
-- We could leverage an existing viewer out there
-
 #### We could let people download or open a PDF in a new tab
 
 - We cannot control or enforce any retention policies on the file
@@ -33,6 +29,24 @@ Users like to leave some of the requirements till the last minute and as such I 
 ### Let's evaluate a few viewers
 
 #### React-PDF
+
+[React PDF](https://www.npmjs.com/package/react-pdf) is one of the more popular libraries out there. It leverages [PDF.js](https://mozilla.github.io/pdf.js/) under the hood and provides a ready to go components like `Document` or `Page`. 
+
+##### Installation
+
+`npm i react-pdf`
+
+For some reason, after trying to load my files, I was faced with `Failed to load PDF file`. Checking the console did not yield anything fruitful. Reading documentation further, it seems like I have to host my `PDF.js` worker elsewhere and it is not as simple plug-n-play. After some time, I was able to get started and render out first page! 
+
+However, the text layer was off. At first, it is easy to think you are bad at CSS, but after a quick search seems like an [issue](https://github.com/wojtekmaj/react-pdf/issues/332) from 2019. @nikonet saved the day with his [fix](https://github.com/wojtekmaj/react-pdf/issues/332#issuecomment-458121654). Not an official fix, but oh well. 
+
+Pros
++ an impressive project by Wojciech Maj
++ simple enough to get started
+
+Cons
+- no UI
+- a lot of common issues that are not mentioned in docs or resolved in issues
 
 #### PDF.js Express
 

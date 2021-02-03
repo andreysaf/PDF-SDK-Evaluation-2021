@@ -1,23 +1,52 @@
-import logo from './logo.svg';
 import './App.css';
+import { Document, Page, pdfjs } from 'react-pdf';
+import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
+import { useState } from 'react';
 
 function App() {
+  const [numPages, setNumPages] = useState(null);
+  const [pageNumber, setPageNumber] = useState(1);
+
+  pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+
+  function onDocumentLoadSuccess({ numPages }) {
+    setNumPages(numPages);
+  }
+
+  function removeTextLayerOffset() {
+    const textLayers = document.querySelectorAll(
+      '.react-pdf__Page__textContent'
+    );
+    textLayers.forEach((layer) => {
+      const { style } = layer;
+      style.top = '0';
+      style.left = '0';
+      style.transform = '';
+    });
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Document file="sample.pdf" onLoadSuccess={onDocumentLoadSuccess}>
+        <Page pageNumber={pageNumber} onLoadSuccess={removeTextLayerOffset} />
+      </Document>
+      <button
+        onClick={() => {
+          setPageNumber(pageNumber - 1);
+        }}
+      >
+        Previous
+      </button>
+      <p>
+        Page {pageNumber} of {numPages}
+      </p>
+      <button
+        onClick={() => {
+          setPageNumber(pageNumber + 1);
+        }}
+      >
+        Next
+      </button>
     </div>
   );
 }
