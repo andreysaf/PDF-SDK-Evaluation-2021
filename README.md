@@ -1,5 +1,5 @@
 # Do not download your PDF
-## A story of digital document usability and security in your application
+### A story of digital document usability and security in your application
 
 Users like to leave some of the requirements till the last minute and as such I put together a guide with samples that outlines several PDF libraries that could save you some time. 
 
@@ -42,21 +42,21 @@ Cons
 - (depending on the library) UI
 - (depending on the library) support for any issues
 
-### Let's evaluate a few viewers
+## Let's evaluate a few viewers
 
 Since there are so many PDF library options, I picked several and will try to highlight most common gotchas.
 
-#### React-PDF
+### React-PDF
 
 [React PDF](https://www.npmjs.com/package/react-pdf) is one of the more popular libraries out there. It leverages [PDF.js](https://mozilla.github.io/pdf.js/) under the hood and provides a ready to go components like `Document` or `Page`. 
 
-##### Installation
+#### Installation
 
 Documentation is available through [npm](https://www.npmjs.com/package/react-pdf) and [GitHub](https://github.com/wojtekmaj/react-pdf).
 
 `npm i react-pdf`
 
-##### First impressions
+#### First impressions
 
 For some reason, after trying to load my files, I was faced with `Failed to load PDF file`. Checking the console did not yield anything fruitful. Reading documentation further, it seems like I have to host my `PDF.js` worker elsewhere and it is not as simple plug-n-play. After some time, I was able to get started and render out first page!
 
@@ -80,11 +80,11 @@ Cons
 - a lot of common issues or gotchas that are not mentioned in docs or resolved in issues
 - still plagued by a lot of issues coming from PDF.js side, for example, when trying to select text
 
-#### PDF.js Express
+### PDF.js Express
 
 [PDF.js Express](https://pdfjs.express/) is a new player that provides an out of the box UI and annotation support on top of `PDF.js` rendering. 
 
-##### Installation
+#### Installation
 
 Documentation and samples is available through [npm](https://www.npmjs.com/package/@pdftron/pdfjs-express) and [website](https://pdfjs.express/documentation/get-started).
 
@@ -94,7 +94,7 @@ After installing, you will need to copy the static files located in `node_module
 
 In the sample, I added a handy `postinstall` script in `package.json`.
 
-#### PDFTron WebViewer
+### PDFTron WebViewer
 
 
 
