@@ -54,7 +54,9 @@ Since there are so many PDF library options, I picked several and will try to hi
 
 Documentation is available through [npm](https://www.npmjs.com/package/react-pdf) and [GitHub](https://github.com/wojtekmaj/react-pdf).
 
-`npm i react-pdf`
+```
+npm i react-pdf
+```
 
 #### First impressions
 
@@ -91,7 +93,9 @@ Cons
 
 Documentation and samples is available through [npm](https://www.npmjs.com/package/@pdftron/pdfjs-express) and [website](https://pdfjs.express/documentation/get-started).
 
-`npm i @pdftron/pdfjs-express`
+```
+npm i @pdftron/pdfjs-express
+```
 
 After installing, you will need to copy the static files located in `node_modules/@pdftron/pdfjs-express/public` into a place that will be served alongside your other website files.
 
