@@ -106,7 +106,7 @@ Getting started was much quicker, thanks to good guides. The UI and annotations 
 
 The searching was problematic in both libraries, but `PDF.js Express` addresses it better with the ability to pick up words with a break in between, however, `PDF.js` still returns incorrect search box positions. 
 
-![searching in pdfjs-express](./assets/screenshots/pdfjs-express/pdfjs-express-searching.png)
+![searching in pdfjs-express](./assets/screenshots/pdfjs-express/pdfjs-express-search.png)
 
 ### PDFTron WebViewer
 
