@@ -72,15 +72,14 @@ Selecting text is a bit of a nightmare, but this is not coming from `react-pdf` 
 
 Searching for any words that have a break in them, does not return the results. There is a [closed issue](https://github.com/wojtekmaj/react-pdf/issues/189) for searching in general where Wojciech reiterates that `react-pdf` is `React-PDF does not aim to be a fully fledged PDF reader, it only gives you an easy way to display PDFs so that you can build some UI around it. You can highlight some words in the text using custom text renderer.`
 
-
-
 Pros
 + an impressive project by [Wojciech Maj](https://wojtekmaj.pl/)
 + simple enough to get started
 + frequent commits and updates
++ it is free
 
 Cons
-- no UI
+- no UI, so a lot of it needs to be implemented
 - a lot of common issues or gotchas that are not mentioned in docs or resolved in issues
 - still plagued by a lot of issues coming from PDF.js side, for example, when trying to select text
 
@@ -107,6 +106,15 @@ Getting started was much quicker, thanks to good guides. The UI and annotations 
 The searching was problematic in both libraries, but `PDF.js Express` addresses it better with the ability to pick up words with a break in between, however, `PDF.js` still returns incorrect search box positions. 
 
 ![searching in pdfjs-express](./assets/screenshots/pdfjs-express/pdfjs-express-search.png)
+
+Pros
++ simple to get started
++ tons of guides and samples
++ annotations and UI is available out of the box
++ UI is available on GitHub and written in React
+
+Cons
+- still leverages PDF.js which comes with its own problems
 
 ### PDFTron WebViewer
 
