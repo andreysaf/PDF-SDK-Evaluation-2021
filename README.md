@@ -44,7 +44,7 @@ Cons
 
 ## Let's evaluate a few viewers
 
-Since there are so many PDF library options, I picked several and will try to highlight most common gotchas.
+Since there are so many PDF library options, I picked several and will try to highlight most common gotchas. For all apps, I ran `npx create-react-app my-pdf-app` and followed the documentation.
 
 ### React-PDF
 
@@ -72,7 +72,7 @@ Selecting text is a bit of a nightmare, but this is not coming from `react-pdf` 
 
 ![selection in react-pdf](./assets/screenshots/react-pdf/react-pdf-selection.gif)
 
-Searching for any words that have a break in them, does not return the results. There is a [closed issue](https://github.com/wojtekmaj/react-pdf/issues/189) for searching in general where Wojciech reiterates that `react-pdf` is 
+Searching for any words that have a break in them, does not return the results. There is a [closed issue](https://github.com/wojtekmaj/react-pdf/issues/189) for searching in general where Wojciech reiterates that:
 
 > React-PDF does not aim to be a fully fledged PDF reader, 
 > it only gives you an easy way to display PDFs so that you can build some UI around it. 
