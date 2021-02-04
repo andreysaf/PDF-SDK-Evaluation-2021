@@ -70,6 +70,14 @@ Selecting text is a bit of a nightmare, but this is not coming from `react-pdf` 
 
 ![selection in react-pdf](./assets/screenshots/react-pdf/react-pdf-selection.gif)
 
+Searching for any words that have a break in them, does not return the results. There is a closed issue for searching in general where Wojciech reiterates that `react-pdf` is 
+
+```
+React-PDF does not aim to be a fully fledged PDF reader, it only gives you an easy way to display PDFs so that you can build some UI around it. You can highlight some words in the text using custom text renderer.
+```
+
+
+
 Pros
 + an impressive project by [Wojciech Maj](https://wojtekmaj.pl/)
 + simple enough to get started
@@ -96,9 +104,11 @@ In the sample, I added a handy `postinstall` script in `package.json`.
 
 #### First impressions
 
-Getting started was much quicker, thanks to good guides. The selection is accurate and does not flash even through it also uses `PDF.js` under the hood. 
+Getting started was much quicker, thanks to good guides. The UI and annotations were available straight out of the box as well. The selection is accurate and does not flash even through it also uses `PDF.js` under the hood. The text selected did run off the page a bit though but overall is better experience.
 
 ![selection in pdfjs-express](./assets/screenshots/pdfjs-express/pdfjs-express-selection.gif)
+
+The searching was problematic in both libraries
 
 ### PDFTron WebViewer
 

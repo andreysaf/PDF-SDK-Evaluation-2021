@@ -27,7 +27,7 @@ function App() {
 
   return (
     <div className="App">
-      <Document file="sample.pdf" onLoadSuccess={onDocumentLoadSuccess}>
+      <Document file="incometaxact.pdf" onLoadSuccess={onDocumentLoadSuccess}>
         <Page pageNumber={pageNumber} onLoadSuccess={removeTextLayerOffset} />
       </Document>
       <button
