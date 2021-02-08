@@ -1,7 +1,7 @@
 # Do Not Download Your PDF
 ### A Story of Digital Document Usability and Security In Your Application
 
-Web developers have quite a few options for adding a PDF renderer to their web application, and evaluating these options can be time consuming. Here is a guide with samples that compares several PDF library options.
+Web developers have quite a few options for adding a PDF renderer to their web application and evaluating these options can be time-consuming. Here is a guide with samples that compares several PDF library options.
 
 ## Table of Contents
 
@@ -32,7 +32,7 @@ Pros
 
 Cons
 - we cannot control or enforce any retention policies on the file
-- if the document has sensitive information, PDF security alone would not be sufficient (PDF encryption, and PDF do not print flags, content copy, extraction)
+- if the document has sensitive information, PDF security alone would not be sufficient (PDF encryption and PDF do not print flags, content copy, extraction)
 - rendering of the content could be different across browsers
 - comments or annotations will not be shown
 
@@ -48,7 +48,7 @@ Cons
 
 #### Leverage An Existing Viewer
 
-The amount features and effort required to get an existing viewer up and running can vary greatly. Some things to consider are:
+The amount of features and effort required to get an existing viewer up and running can vary greatly. Some things to consider are:
 
 - Is rendering consistent between browsers
 - How much time and effort does it take to integrate the viewer into an existing web application
@@ -60,7 +60,7 @@ The amount features and effort required to get an existing viewer up and running
   * Fixing potential rendering issues
 ## Let's evaluate a few viewers
 
-Since there are so many PDF library options, I picked several and will try to highlight most common gotchas. For all apps, I ran `npx create-react-app my-pdf-app` and followed the documentation.
+Since there are so many PDF library options, I picked several and will try to highlight the most common gotchas. For all apps, I ran `npx create-react-app my-pdf-app` and followed the documentation.
 
 ### React-PDF
 
@@ -76,7 +76,7 @@ npm i react-pdf
 
 #### First impressions
 
-For some reason, after trying to load my files, I was faced with `Failed to load PDF file`. Checking the console did not yield anything fruitful. Reading documentation further, it seems like I have to host my `PDF.js` worker elsewhere and it was not a plug-n-play solution as I initially hoped. After some time, I was able to get started and render out first page!
+For some reason, after trying to load my files, I was faced with `Failed to load PDF file`. Checking the console did not yield anything fruitful. Reading documentation further, it seems like I have to host my `PDF.js` worker elsewhere and it was not a plug-n-play solution as I initially hoped. After some time, I was able to get started and render out the first page!
 
 ![errors in react-pdf](./assets/screenshots/react-pdf/React-PDF.png)
 
@@ -117,7 +117,7 @@ Download the [latest build](https://mozilla.github.io/pdf.js/getting_started/#do
 
 #### First impressions
 
-Installation is fairly straight forward. PDF.js allows us to build our custom UI as well as leverage an existing UI provided by Mozilla. However, it is still plagued by a numerous issues like searching, limited zoom capability and others. Currently, there 582 issues are open on [GitHub](https://github.com/mozilla/pdf.js/issues).
+Installation is fairly straight forward. PDF.js allows us to build our custom UI as well as leverage an existing UI provided by Mozilla. However, it is still plagued by numerous issues like searching, limited zoom capability and others. Currently, there 582 issues are open on [GitHub](https://github.com/mozilla/pdf.js/issues).
 
 Pros
 + out of the box UI
@@ -136,7 +136,7 @@ Cons
 
 #### Installation
 
-Documentation and samples is available through [npm](https://www.npmjs.com/package/@pdftron/pdfjs-express) and [website](https://pdfjs.express/documentation/get-started).
+Documentation and samples are available through [npm](https://www.npmjs.com/package/@pdftron/pdfjs-express) and [website](https://pdfjs.express/documentation/get-started).
 
 ```
 npm i @pdftron/pdfjs-express
@@ -148,7 +148,7 @@ In the sample, I added a handy `postinstall` script in `package.json`.
 
 #### First impressions
 
-Getting started was much quicker, thanks to good guides. The UI and annotations were available straight out of the box as well. The selection is accurate and does not flash even through it also uses `PDF.js` under the hood. The text selected did run off the page a bit though but overall is better experience.
+Getting started was much quicker, thanks to good guides. The UI and annotations were available straight out of the box as well. The selection is accurate and does not flash even though it also uses `PDF.js` under the hood. The text selected did run off the page a bit though but overall it is an improvement.
 
 ![selection in pdfjs-express](./assets/screenshots/pdfjs-express/pdfjs-express-selection.gif)
 
@@ -171,7 +171,7 @@ Cons
 
 #### Installation
 
-Documentation and samples is available through [npm](https://www.npmjs.com/package/@pdftron/webviewer) and [website](https://www.pdftron.com/documentation/web/).
+Documentation and samples are available through [npm](https://www.npmjs.com/package/@pdftron/webviewer) and [website](https://www.pdftron.com/documentation/web/).
 
 ```
 npm i @pdftron/webviewer
@@ -183,7 +183,7 @@ In the sample, I added a handy `postinstall` script in `package.json`.
 
 #### First impressions
 
-Getting started was just as quick as PDF.js Express, thanks to good guides. The UI and annotations were available straight out of the box as well as some of more advanced PDF capabilities like redaction and digital signatures. It is nice to see support for MS Office files client-side without introducing another UI or a library. 
+Getting started was just as quick as PDF.js Express, thanks to good guides. The UI and annotations were available straight out of the box as well as some of the more advanced PDF capabilities like redaction and digital signatures. It is nice to see support for MS Office files client-side without introducing another UI or a library. 
 
 Pros
 + simple to get started
@@ -195,6 +195,6 @@ Pros
 + dedicated support team to answer your questions
 
 Cons
-- the library is the heaviest from all the above
+- the library is the heaviest of them all
 
 
