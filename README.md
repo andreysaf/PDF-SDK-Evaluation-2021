@@ -1,5 +1,5 @@
 # Do Not Download Your PDF
-### A story of digital document usability and security in your application
+### A Story of Digital Document Usability and Security In Your Application
 
 Web developers have quite a few options for adding a PDF renderer to their web application, and evaluating these options can be time consuming. Here is a guide with samples that compares several PDF library options.
 
