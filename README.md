@@ -13,7 +13,7 @@ Web developers have quite a few options for adding a PDF renderer to their web a
   * [React-PDF](#react-pdf)
     + [Installation](#installation)
     + [First impressions](#first-impressions)
-  * [PDF.js](#PDF.js)
+  * [PDF.js](#pdfjs)
     + [Installation](#installation)
     + [First impressions](#first-impressions)
   * [PDF.js Express](#pdfjs-express)
