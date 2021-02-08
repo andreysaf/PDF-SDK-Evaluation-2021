@@ -60,7 +60,7 @@ For some reason, after trying to load my files, I was faced with `Failed to load
 
 ![errors in react-pdf](./assets/screenshots/react-pdf/React-PDF.png)
 
-However, the text layer was off. At first, it is easy to think you are bad at CSS, but after a quick search seems like an [issue](https://github.com/wojtekmaj/react-pdf/issues/332) from 2019. @nikonet saved the day with his [fix](https://github.com/wojtekmaj/react-pdf/issues/332#issuecomment-458121654). Not an official fix, but oh well. 
+However, the text layer was off. At first, it is easy to think there's a CSS issue happening, but a quick search reveals this is a known [issue](https://github.com/wojtekmaj/react-pdf/issues/332) from 2019. @nikonet saved the day with his [fix](https://github.com/wojtekmaj/react-pdf/issues/332#issuecomment-458121654). Not an official fix, but oh well.
 
 ![text layer shift in react-pdf](./assets/screenshots/react-pdf/React-PDF-text-layer.png)
 
