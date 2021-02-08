@@ -171,7 +171,7 @@ Cons
 
 #### Installation
 
-Documentation and samples is available through [npm](https://www.npmjs.com/package/@pdftron/webviewer and [website](https://www.pdftron.com/documentation/web/).
+Documentation and samples is available through [npm](https://www.npmjs.com/package/@pdftron/webviewer) and [website](https://www.pdftron.com/documentation/web/).
 
 ```
 npm i @pdftron/webviewer
