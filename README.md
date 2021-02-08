@@ -81,9 +81,9 @@ Pros
 + it is free
 
 Cons
-- no UI, so a lot of it needs to be implemented
+- no out-of-the-box UI, so an additional time cost should be considered
 - a lot of common issues or gotchas that are not mentioned in docs or resolved in issues
-- still plagued by a lot of issues coming from PDF.js side, for example, when trying to select text
+- still plagued by a lot of issues due to PDF.js dependency, for example, when trying to select text
 
 ### PDF.js Express
 
