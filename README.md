@@ -44,7 +44,7 @@ Since there are so many PDF library options, I picked several and will try to hi
 
 ### React-PDF
 
-[React PDF](https://www.npmjs.com/package/react-pdf) is one of the more popular libraries out there. It leverages [PDF.js](https://mozilla.github.io/pdf.js/) under the hood and provides a ready to go components like `Document` or `Page`. 
+[React PDF](https://www.npmjs.com/package/react-pdf) is one of the more popular libraries out there. It leverages [PDF.js](https://mozilla.github.io/pdf.js/) under the hood and provides ready to go components like `Document` or `Page`.
 
 #### Installation
 
