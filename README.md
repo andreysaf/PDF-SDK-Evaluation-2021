@@ -1,7 +1,7 @@
 # Do Not Download Your PDF
 ### A story of digital document usability and security in your application
 
-Users like to leave some of the requirements till the last minute and as such I put together a guide with samples that outlines several PDF libraries that could save you some time. 
+Web developers have quite a few options for adding a PDF renderer to their web application, and evaluating these options can be time consuming. Here is a guide with samples that compares several PDF library options.
 
 ### I need to support PDFs within my app, how do I do that?
 
