@@ -3,6 +3,21 @@
 
 Web developers have quite a few options for adding a PDF renderer to their web application, and evaluating these options can be time consuming. Here is a guide with samples that compares several PDF library options.
 
+## Table of Contents
+
+* [Adding PDF Support In A Web Application In 2021](#adding-pdf-support-in-a-web-application-in-2021)
+  + [Downloading or Opening PDFs In A New Tab](#downloading-or-opening-pdfs-in-a-new-tab)
+  + [Create A Viewer From Scratch](#create-a-viewer-from-scratch)
+  + [Leverage An Existing Viewer](#leverage-an-existing-viewer)
+* [Let's evaluate a few viewers](#let-s-evaluate-a-few-viewers)
+  * [React-PDF](#react-pdf)
+    + [Installation](#installation)
+    + [First impressions](#first-impressions)
+  * [PDF.js Express](#pdfjs-express)
+    + [Installation](#installation-1)
+    + [First impressions](#first-impressions-1)
+  * [PDFTron WebViewer](#pdftron-webviewer)
+
 ### Adding PDF Support In A Web Application In 2021
 
 #### Downloading or Opening PDFs In A New Tab
