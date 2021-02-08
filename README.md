@@ -3,7 +3,7 @@
 
 Web developers have quite a few options for adding a PDF renderer to their web application, and evaluating these options can be time consuming. Here is a guide with samples that compares several PDF library options.
 
-### I need to support PDFs within my app, how do I do that?
+### Adding PDF Support In A Web Application In 2021
 
 #### We could let people download or open a PDF in a new tab
 
