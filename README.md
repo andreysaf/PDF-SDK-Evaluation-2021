@@ -28,20 +28,16 @@ Cons
 
 #### Leverage An Existing Viewer
 
-Pros
-+ (depending on the library) consistent rendering across browsers
-+ (depending on the library) implementation effort
-+ (depending on the library) support for annotations
-+ (depending on the library) UI
-+ (depending on the library) support for any issues
+The amount features and effort required to get an existing viewer up and running can vary greatly. Some things to consider are:
 
-Cons
-- (depending on the library) consistent rendering across browsers
-- (depending on the library) implementation effort
-- (depending on the library) support for annotations
-- (depending on the library) UI
-- (depending on the library) support for any issues
-
+- Is rendering consistent between browsers
+- How much time and effort does it take to integrate the viewer into an existing web application
+- Does the viewer support annotations, and if so, does it conform with the PDF specification of representing them as an XFDF
+- Does the look and feel conform with your web application's styling? If not, how easy is it to customize the UI?
+- Does the viewer have a support team for:
+  * Answering questions about the integration process
+  * Maintaining the library for when browsers are updated
+  * Fixing potential rendering issues
 ## Let's evaluate a few viewers
 
 Since there are so many PDF library options, I picked several and will try to highlight most common gotchas. For all apps, I ran `npx create-react-app my-pdf-app` and followed the documentation.
