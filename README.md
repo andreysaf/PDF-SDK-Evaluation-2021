@@ -5,7 +5,7 @@ Web developers have quite a few options for adding a PDF renderer to their web a
 
 ### Adding PDF Support In A Web Application In 2021
 
-#### We could let people download or open a PDF in a new tab
+#### Downloading or Opening PDFs In A New Tab
 
 Pros
 + no work required
@@ -16,7 +16,7 @@ Cons
 - rendering of the content could be different across browsers
 - comments or annotations will not be shown
 
-#### We could implement our own viewer
+#### Create A Viewer From Scratch
 
 Pros
 + you are starting a PDF company
@@ -26,7 +26,7 @@ Cons
 - cannot account for all corner cases and poorly generated PDFs
 - will need a lot of resources to support it
 
-#### We could leverage an existing viewer out there
+#### Leverage An Existing Viewer
 
 Pros
 + (depending on the library) consistent rendering across browsers
