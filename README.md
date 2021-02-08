@@ -13,6 +13,9 @@ Web developers have quite a few options for adding a PDF renderer to their web a
   * [React-PDF](#react-pdf)
     + [Installation](#installation)
     + [First impressions](#first-impressions)
+  * [PDF.js](#PDF.js)
+    + [Installation](#installation)
+    + [First impressions](#first-impressions)
   * [PDF.js Express](#pdfjs-express)
     + [Installation](#installation-1)
     + [First impressions](#first-impressions-1)
@@ -99,6 +102,31 @@ Cons
 - no out-of-the-box UI, so an additional time cost should be considered
 - a lot of common issues or gotchas that are not mentioned in docs or resolved in issues
 - still plagued by a lot of issues due to PDF.js dependency, for example, when trying to select text
+
+### PDF.js
+
+Perhaps the most popular open-source viewer out there is [PDF.js](https://mozilla.github.io/pdf.js/) that is powering `React-PDF` project. 
+
+#### Installation
+
+Documentation is available on the project's [website](https://mozilla.github.io/pdf.js/examples/). 
+
+Download the [latest build](https://mozilla.github.io/pdf.js/getting_started/#download) and place the extracted into `public/lib`. 
+
+#### First impressions
+
+Installation is fairly straight forward. PDF.js allows us to build our custom UI as well as leverage an existing UI provided by Mozilla. However, it is still plagued by a numerous issues like searching, limited zoom capability and others. Currently, there 582 issues are open on [GitHub](https://github.com/mozilla/pdf.js/issues).
+
+Pros
++ out of the box UI
++ simple to get started
++ it is free
+
+Cons
+- no UI npm package
+- UI customization is not available via APIs
+- selection issues
+- search issues
 
 ### PDF.js Express
 
