@@ -56,7 +56,7 @@ npm i react-pdf
 
 #### First impressions
 
-For some reason, after trying to load my files, I was faced with `Failed to load PDF file`. Checking the console did not yield anything fruitful. Reading documentation further, it seems like I have to host my `PDF.js` worker elsewhere and it is not as simple plug-n-play. After some time, I was able to get started and render out first page!
+For some reason, after trying to load my files, I was faced with `Failed to load PDF file`. Checking the console did not yield anything fruitful. Reading documentation further, it seems like I have to host my `PDF.js` worker elsewhere and it was not a plug-n-play solution as I initially hoped. After some time, I was able to get started and render out first page!
 
 ![errors in react-pdf](./assets/screenshots/react-pdf/React-PDF.png)
 
