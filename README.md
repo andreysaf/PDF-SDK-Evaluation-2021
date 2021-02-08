@@ -192,6 +192,7 @@ Pros
 + UI is available on GitHub and written in React
 + advanced PDF functionality like redaction and digital signatures
 + additional file format support for MS Office, images, videos and others
++ dedicated support team to answer your questions
 
 Cons
 - the library is the heaviest from all the above
