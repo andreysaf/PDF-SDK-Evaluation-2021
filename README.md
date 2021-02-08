@@ -14,12 +14,14 @@ Web developers have quite a few options for adding a PDF renderer to their web a
     + [Installation](#installation)
     + [First impressions](#first-impressions)
   * [PDF.js](#pdfjs)
-    + [Installation](#installation)
-    + [First impressions](#first-impressions)
-  * [PDF.js Express](#pdfjs-express)
     + [Installation](#installation-1)
     + [First impressions](#first-impressions-1)
+  * [PDF.js Express](#pdfjs-express)
+    + [Installation](#installation-2)
+    + [First impressions](#first-impressions-2)
   * [PDFTron WebViewer](#pdftron-webviewer)
+    + [Installation](#installation-3)
+    + [First impressions](#first-impressions-3)
 
 ### Adding PDF Support In A Web Application In 2021
 
@@ -165,5 +167,33 @@ Cons
 
 ### PDFTron WebViewer
 
+[PDFTron WebViewer](https://www.pdftron.com/webviewer/demo/) provides rendering of PDFs, MS Office, images using PDFTron's proprietary engine. 
+
+#### Installation
+
+Documentation and samples is available through [npm](https://www.npmjs.com/package/@pdftron/webviewer and [website](https://www.pdftron.com/documentation/web/).
+
+```
+npm i @pdftron/webviewer
+```
+
+After installing, you will need to copy the static files located in `node_modules/@pdftron/webviewer/public` into a place that will be served alongside your other website files.
+
+In the sample, I added a handy `postinstall` script in `package.json`.
+
+#### First impressions
+
+Getting started was just as quick as PDF.js Express, thanks to good guides. The UI and annotations were available straight out of the box as well as some of more advanced PDF capabilities like redaction and digital signatures. It is nice to see support for MS Office files client-side without introducing another UI or a library. 
+
+Pros
++ simple to get started
++ tons of guides and samples
++ annotations and UI is available out of the box
++ UI is available on GitHub and written in React
++ advanced PDF functionality like redaction and digital signatures
++ additional file format support for MS Office, images, videos and others
+
+Cons
+- the library is the heaviest from all the above
 
 
