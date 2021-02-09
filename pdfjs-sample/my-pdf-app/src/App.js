@@ -5,7 +5,7 @@ function App() {
     <div className="App">
       <iframe
         id="pdf-js-viewer"
-        src="lib/web/viewer.html?file=../../incometaxact.pdf"
+        src="lib/web/viewer.html?file=../../sample.pdf"
         title="webviewer"
         frameborder="0"
         width="100%"

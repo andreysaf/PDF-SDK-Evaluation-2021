@@ -9,7 +9,7 @@ function App() {
     WebViewer(
       {
         path: '/pdfjsexpress',
-        initialDoc: 'incometaxact.pdf',
+        initialDoc: 'sample.pdf',
       },
       viewer.current,
     ).then((instance) => {
