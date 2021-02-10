@@ -3,7 +3,7 @@
 
 Web developers have quite a few options for adding a PDF renderer to their web application and evaluating these options can be time-consuming. Here is a guide with samples that compares several PDF library options.
 
-Watch the presentation and the overview for this repo on [YouTube](https://youtu.be/4bWEf8tOXXE). 
+Watch the presentation and the overview for this repo on [YouTube](https://youtu.be/rGTrcN69LR8). 
 
 ## Table of Contents
 
